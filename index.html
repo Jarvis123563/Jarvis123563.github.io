@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="How to promote your Telegram channel or bot effectively using free tools and smart tips." />
+  <meta name="keywords" content="Telegram bot, Telegram promotion, grow Telegram channel, link promotion, Telegram tips" />
+  <meta name="author" content="@gojo16s" />
+  <title>Promote Your Telegram Channel</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+    body {
+      background-color: #121212;
+      color: #f0f0f0;
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 40px 20px;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      background: #1e1e1e;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    }
+
+    h1, h2 {
+      color: #f0f0f0;
+    }
+
+    h1 {
+      font-size: 1.6rem;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      margin-top: 30px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin: 15px 0;
+    }
+
+    a.button {
+      display: inline-block;
+      margin: 20px 0;
+      padding: 12px 24px;
+      font-size: 1rem;
+      font-weight: 600;
+      background-color: #00c896;
+      color: #121212;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: 0.3s ease;
+    }
+
+    a.button:hover {
+      background-color: #00a67f;
+      color: white;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      text-align: center;
+      color: #aaa;
+    }
+
+    .counter {
+      margin-top: 20px;
+      font-size: 0.95rem;
+      color: #ccc;
+      text-align: center;
+    }
+   .ad {
+  background: #1e1e1e;
+  border: 1px solid #333;
+  padding: 16px 20px;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  color: #e0e0e0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 500px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.ad:hover {
+  box-shadow: 0 0 20px #00ffe5aa;
+  transform: scale(1.01);
+}
+
+.ad p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.ad a {
+  color: #00ffe5;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.ad a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🚀 How to Promote Your Telegram Channel or Links</h1>
+    <p>
+      Promoting your Telegram channel or group or link effectively requires both smart strategies and the right tools. 
+      One of the easiest and fastest ways to reach more users is by using automated promotion bots and referral tools. You can make your own bots for this or others.
+    </p>
+    
+      <a class="button" href="botsva.html">📋 View Bot List</a>
+    <p>if you want to promote link or groups by group bots or through bots or manually to groups contact (paid or conditional promotion)</p>
+     <a class="button" href="tg://resolve?domain=gojo16s" onclick="navigator.clipboard.writeText('Promote')"> Contact us(message copied)</a>
+
+    <p>
+      Here are some helpful bots that can boost your promotion efforts and some other useful bots. 
+      You can check the full list of bots that support link sharing, channel promotion, user tracking, and more above.try to make groups first after a significant amount of members u can use bots to manage them like, the bot send conditions to continue msg in this group. this will perfectly do the work 
+    </p>
+    
+    <p style="color: cyan;">
+      if you want promote or puplish your links here contact us above
+    </p>
+    <div class="ad">
+    <p>
+      ads
+      join this group to share your links 
+      <a href="tg://resolve?domain=gpay_world">join group</a>
+    </p>
+    </div>
+    <p>
+      After selecting the right tool, start by sharing your bot or channel on high traffic groups and communities. 
+      Use eye-catching descriptions, offer value (like free content or giveaways), and make sure you monitor the results.
+      Combine this with SEO-friendly link sharing, and you'll steadily grow your Telegram presence.
+    </p>
+
+    <div class="counter">
+      👀 views <span id="viewCount">loading...</span> for this site.
+    </div>
+
+    <footer>
+      © 2025 @gojo16s | Telegram Promotion Hub
+    </footer>
+  </div>
+
+  <script>
+    const binUrl = "https://api.jsonbin.io/v3/b/684048168561e97a501f8c26";
+    const apiKey = "$2a$10$Jiiz.ctAXTsUV7qjdGdSkei.dLZJzizjhN7J1Nl.sNdpRz3Jqp1eS";  // 🔐 Replace this with your key
+
+    const headers = {
+      "X-Master-Key": apiKey,
+      "Content-Type": "application/json"
+    };
+
+    fetch(binUrl, { headers })
+      .then(res => res.json())
+      .then(data => {
+        const currentViews = data.record.views;
+        const newViews = currentViews + 1;
+
+        // Show the new view count on the page
+        document.getElementById("viewCount").innerText = newViews;
+
+        // Update the view count in JSONBin
+        return fetch(binUrl, {
+          method: "PUT",
+          headers: headers,
+          body: JSON.stringify({ views: newViews })
+        });
+      })
+      .catch(err => {
+        console.error("Error updating view count:", err);
+        document.getElementById("viewCount").innerText = "error";
+      });
+  </script>
+</body>
+</html>
